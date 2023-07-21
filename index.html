@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>password</title>
+
+
+	<script type="text/javascript">
+
+		function checkpassword() {
+			var password = document.getElementById("passwordbox");
+			var passwordText= password.value;
+			if (passwordText == "Siege_Tank_243") {
+			return true;	
+			}
+			else{
+				alert("Access denied")
+				return false;
+			}
+		}
+</script>
+</head>
+<body>
+
+	<p style="font-size: 50px;">Welcome</p>
+	<p>Please enter password to view the website.</p>
+	<p> Password: <input id="passwordbox"type="password"></p>
+	<a href="Thomaspage1.html" onclick="return checkpassword()">Click here to enter website!</a>
+
+
+
+</body>
+</html>
